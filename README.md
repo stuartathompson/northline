@@ -7,10 +7,10 @@ _/     _/    _/_/_/   _/       _/    _/   _/   _/  _/  _/    _/    _/_/_/
 ```
                                                                     
 Northline is a JavaScript library that creates SVG maps of Canada's provinces and territories from GeoJSON.
-It's based on the U.S. version, Landline.
-It comes with Stateline, which makes creating responsive U.S. state and county maps easy.
+It's a small modification on the U.S. version, Landline, by ProPublica.
+It comes with Stateline, also by ProPublica, which makes creating responsive U.S. state and county maps easy.
 
-### Based on Landline and Stateline by ProPublica
+### Forked from Landline and Stateline by ProPublica
 Documentation for Landline: http://propublica.github.io/landline/
 Issues or questions about Landline and Stateline: https://github.com/propublica/landline/issues
 
