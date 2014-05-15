@@ -129,7 +129,7 @@ function addCommas(nStr)
 
       $(function() {
         // Initialize the map
-        var map = new Landline.Northline("#landline_container", "provinces");
+        var map = new Landline.Northline("#landline_container", "provinces.ON");
         
         // Set up the tooltip template
         var tmpl = _.template($("#landline_tooltip_tmpl").html());
@@ -139,7 +139,7 @@ function addCommas(nStr)
         map.on('mouseover', function(e, path, data) {
           data.existingStyle = (data.existingStyle || {});
           data.existingStyle["fill"]        = path.attr("fill");
-          data.existingStyle["strokeWidth"] = path.attr("stroke-width");
+          data.existingStyle["stroke-width"] = path.attr("stroke-width");
           data.existingStyle["stroke"] = path.attr("stroke");
           path.attr("stroke", "#333").attr("stroke-width", 1.75).toFront();
         });
@@ -155,7 +155,6 @@ function addCommas(nStr)
 
         map.on('mouseout', function(e, path, data) {
           $("#landline_tooltip").hide();
-          console.log(data.existingStyle);
           _(data.existingStyle).each(function(v, k) {
             path.attr(k, v);
           });
